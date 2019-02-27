@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>K.Barczynski</title>
+		
+	<form action="mail@gmail.com">
+	Login: <input name= "Login" value=""size="10">
+	Password <input name= "Password" value=""size="10">
+	<input type="submit">
+	
+	<style>
+	body
+	{
+		background-color: grey;
+	}
+	
+			#header
+			{
+				border: 10px black solid;
+				padding: 15px;
+				background: white;
+				background-clip: padding-box;
+				font-family: "Times New Roman", Times, serif;
+				text-align:center;
+			}
+			#content		
+			{
+				font-family: "Arial", Times, serif;
+				float:right;
+				background-color:green;
+				width:90%;
+				min-height:700px;
+				
+			}
+
+			#menu
+			{
+				float:left;
+				background-color:red;
+				width:10%;
+				min-height:700px;
+				font-family: "Times New Roman", Times, serif;
+				
+			}
+			
+			#czas
+			{
+				float:right;
+				padding: 20px;
+			}
+	</style>
+		
+</head>
+<body>
+		<div id="full">
+		
+		<div id="czas"></div>
+		
+		<div id="header"><p>Witam, na mojej stronie!</p></div>
+	
+		<div id="menu">Strona główna<br>O mnie<br>Moje Prace<br> </div>
+		
+		<div id="content"><p>(prawdopodobnie samego siebie i nikt inny nie ujrzy tego tekstu na oczy)<br><br>  
+		
+		Co bedzie na tej stronie?<br><br> 
+		
+		Teraz moze cos o mnie<br><br>  
+		
+		Postaram sie umieszczac tu swoje prace dzieki czemu bede mogl przejrzec swoj rozwoj *badz jego brak* w swiecie programowania.<br> 
+		
+		</p></div>
+
+	</div>	
+		<script type="text/javascript">
+		function czas(){ 
+			var dzisiaj = new Date();
+			var godzina = dzisiaj.getHours();
+			var minuta = dzisiaj.getMinutes();
+			var sekunda = dzisiaj.getSeconds();
+				if (godzina < 10)
+					{
+				godzina = "0" + godzina;
+			}
+			if (minuta < 10) {
+				minuta = "0" + minuta;
+			}
+			if (sekunda < 10) {
+				sekunda = "0" + sekunda;
+			}
+		
+			document.querySelector("#czas").innerHTML = "Obecna godzina:" + godzina + " : " + minuta + " : " + sekunda;
+		 
+			setTimeout(czas, 1000);
+		}
+			window.addEventListener("load", czas);		 
+		 </script>
+		 <script type="text/javascript">
+		 fuction password (pass) {
+			 var password = document.login.pass.value;
+			 
+			 if(password=="1")
+			 {
+				 window.location.href="aqq.html";
+			 }
+			 else
+			 {
+				 alert("zle haslo"");
+				 
+			 }
+
+		 }
+		 </script>
+
+	
+
+<body>
+</html>
